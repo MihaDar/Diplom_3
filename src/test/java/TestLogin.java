@@ -7,12 +7,12 @@ import site.nomoreparties.stellarburgers.HomePage;
 import site.nomoreparties.stellarburgers.PasswordRecoveryPage;
 import site.nomoreparties.stellarburgers.RegisterPage;
 
-public class TestLogin extends DataUserRegistr {
+public class TestLogin extends DataTests {
 
 
     @Before
     public void CreateUser(){
-        userHttpClient.createUser(email, password, name);
+        userApiClient.createUser(email, password, name);
     }
 
     @Test

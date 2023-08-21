@@ -6,11 +6,11 @@ import site.nomoreparties.stellarburgers.HomePage;
 import site.nomoreparties.stellarburgers.LoginPage;
 import site.nomoreparties.stellarburgers.ProfilePage;
 
-public class TestPersonalAccount extends DataUserRegistr {
+public class TestPersonalAccount extends DataTests {
 
     @Before
     public void CreateUser(){
-        userHttpClient.createUser(email, password, name);
+        userApiClient.createUser(email, password, name);
     }
 
     @Test

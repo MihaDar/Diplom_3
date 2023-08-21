@@ -4,7 +4,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import site.nomoreparties.stellarburgers.HomePage;
 
-public class TestConstructor extends DataUserRegistr {
+public class TestConstructor extends DataTests {
 
     @Override
     @After

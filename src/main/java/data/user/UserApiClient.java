@@ -3,15 +3,16 @@ package data.user;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 
+import static data.browser.WebDriverBrowser.BASE_URL;
 import static io.restassured.RestAssured.given;
 
-public class UserApiHttpClient {
+public class UserApiClient {
     private static final String API_AUTH_REGISTER = "/api/auth/register";
     private static final String API_AUTH_LOGIN = "/api/auth/login";
     private static final String API_AUTH_USER = "/api/auth/user";
 
-    public UserApiHttpClient() {
-        RestAssured.baseURI = "https://stellarburgers.nomoreparties.site";
+    public UserApiClient() {
+        RestAssured.baseURI = BASE_URL;
     }
 
     public Response createUser(String email, String password, String name) {

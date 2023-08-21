@@ -1,11 +1,11 @@
 import data.browser.WebDriverBrowser;
-import data.user.UserApiHttpClient;
+import data.user.UserApiClient;
 import org.junit.After;
 import org.junit.Before;
 import org.openqa.selenium.WebDriver;
 import static data.browser.WebDriverBrowser.BASE_URL;
 
-public class DataUserRegistr {
+public class DataTests {
 
     public String name = "Диплом";
     public String email = "diplom_qa_java_21@yandex.ru";
@@ -14,7 +14,7 @@ public class DataUserRegistr {
 
 
     public WebDriver driver;
-    public UserApiHttpClient userHttpClient = new UserApiHttpClient();
+    public UserApiClient userApiClient = new UserApiClient();
 
     @Before
     public void setUp() {
@@ -25,6 +25,6 @@ public class DataUserRegistr {
     @After
     public void teardown() {
         driver.quit();
-        userHttpClient.deleteUser(email, password);
+        userApiClient.deleteUser(email, password);
     }
 }

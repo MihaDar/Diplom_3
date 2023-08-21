@@ -5,7 +5,7 @@ import site.nomoreparties.stellarburgers.LoginPage;
 import site.nomoreparties.stellarburgers.HomePage;
 import site.nomoreparties.stellarburgers.RegisterPage;
 
-public class RegisterTest extends DataUserRegistr {
+public class RegisterTest extends DataTests {
 
 
     @Test
