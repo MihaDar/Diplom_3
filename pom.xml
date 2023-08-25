@@ -24,11 +24,6 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>pl.pragmatists</groupId>
-            <artifactId>JUnitParams</artifactId>
-            <version>1.1.0</version>
-        </dependency>
-        <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
             <version>4.9.1</version>
@@ -37,7 +32,7 @@
             <groupId>io.github.bonigarcia</groupId>
             <artifactId>webdrivermanager</artifactId>
             <version>5.4.1</version>
-            <scope>test</scope>
+            <scope>test, compile</scope>
         </dependency>
         <dependency>
             <groupId>io.qameta.allure</groupId>
@@ -48,26 +43,14 @@
         <dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
-            <version>4.4.0</version>
-            <scope>test</scope>
+            <version>5.3.1</version>
+            <scope>test, compile</scope>
         </dependency>
         <dependency>
             <!-- модуль взаимодействия Allure и RestAssured -->
             <groupId>io.qameta.allure</groupId>
             <artifactId>allure-rest-assured</artifactId>
             <version>${allure.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>io.github.bonigarcia</groupId>
-            <artifactId>webdrivermanager</artifactId>
-            <version>5.4.1</version>
-            <scope>compile</scope>
-        </dependency>
-        <dependency>
-            <groupId>io.rest-assured</groupId>
-            <artifactId>rest-assured</artifactId>
-            <version>5.3.1</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
